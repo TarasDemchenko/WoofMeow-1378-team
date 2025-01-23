@@ -1,12 +1,13 @@
+import Catalog from "../../components/Catalog/Catalog"
+
 import { useEffect, useState } from 'react';
-import styles from './PageLayout.module.css';
-import Catalog from './Catalog/Catalog';
 import {
   categories as initialCategories,
   products as initialProducts,
-} from '../fake-data';
+} from '../../fake-data';
 
-export function PageLayout() {
+
+export default function CatalogPage () {
   const [page, setPage] = useState('catalog');
   const [basket, setBasket] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -27,20 +28,14 @@ export function PageLayout() {
   }, []);
 
   return (
-    <div className={styles.container}>
-      <header className={styles.header}>header</header>
-      <main className={styles.main}>
-        {page === 'catalog' && (
-          <Catalog
-            categories={categories}
-            products={products}
-            currentCategoryId={currentCategoryId}
-            setProducts={setProducts}
-            handleSelectCategory={handleSelectCategory}
-          />
-        )}
-      </main>
-      <footer className={styles.header}>footer</footer>
-    </div>
-  );
+    <>
+      <Catalog 
+        categories={categories}
+        products={products}
+        currentCategoryId={currentCategoryId}
+        setProducts={setProducts}
+        handleSelectCategory={handleSelectCategory}
+      />
+    </>
+  )
 }
