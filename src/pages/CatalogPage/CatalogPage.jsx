@@ -1,4 +1,4 @@
-import Catalog from "../../components/Catalog/Catalog"
+import Catalog from "../../components/catalog/Catalog/Catalog"
 
 import { useEffect, useState } from 'react';
 import {

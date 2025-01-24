@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import ProductCard from './ProductCard';
+import ProductCard from '../ProductCard/ProductCard';
 import styles from './Products.module.css';
-import ProductsControls from './ProductsControls';
+import ProductsControls from '../ProductsControls/ProductsControls';
 
 function Products({ products, currentCategoryId, setProducts }) {
   const [sortOrder, setSortOrder] = useState('asc');

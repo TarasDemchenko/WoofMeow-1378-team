@@ -1,6 +1,6 @@
 import styles from './Catalog.module.css';
-import Categories from './Categories';
-import Products from './Products';
+import Categories from '../Categories/Categories';
+import Products from '../Products/Products';
 
 export default function Catalog({
   categories,

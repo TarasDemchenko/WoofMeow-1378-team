@@ -1,5 +1,5 @@
 import styles from './ProductsControls.module.css';
-import { products as initialProducts } from '../../fake-data';
+import { products as initialProducts } from '../../../fake-data';
 import { useRef } from 'react';
 
 function ProductsControls({ currentCategoryId, setProducts, setSortOrder }) {
