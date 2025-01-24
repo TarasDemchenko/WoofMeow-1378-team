@@ -1,0 +1,13 @@
+.catalog {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f9f9; /* Mild background for main */
+}
+
+@media (max-width: 767px) {
+  .catalog {
+    flex-direction: column;
+  }
+}

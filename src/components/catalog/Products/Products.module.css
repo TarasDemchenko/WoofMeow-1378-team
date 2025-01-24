@@ -1,0 +1,15 @@
+.container {
+  flex: 0 0 75%;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-height: 300px; /* Temporary height for visibility */
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  background-color: #fff8dc;
+}

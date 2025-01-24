@@ -1,0 +1,39 @@
+.categories {
+  background-color: #eaf7ff;
+  flex: 0 0 20%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-self: start;
+  padding: 10px;
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+}
+
+.item {
+  flex: 1 1 calc(50% - 10px); /* Two buttons per row */
+}
+
+/* Category Button */
+.button {
+  width: 100%; /* Button fills the list item's width */
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5; /* Light gray background */
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ddd; /* Slightly darker on hover */
+}
+
+/* Desktop and Tablet Layout (768px and above) */
+@media (min-width: 768px) {
+  .item {
+    flex: 1 1 100%; /* Flexible width for list items */
+  }
+}
